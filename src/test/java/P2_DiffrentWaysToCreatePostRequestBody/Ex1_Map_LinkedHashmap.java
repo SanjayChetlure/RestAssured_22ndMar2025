@@ -1,14 +1,14 @@
-package P1_basicHttpMethods;
+package P2_DiffrentWaysToCreatePostRequestBody;
+
 import org.testng.annotations.Test;
 
 import java.util.LinkedHashMap;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
-public class Ex2_postRequest
+public class Ex1_Map_LinkedHashmap
 {
-
     @Test
     public void TC1_addNewStudent()
     {
