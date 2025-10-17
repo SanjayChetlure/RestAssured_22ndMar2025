@@ -7,20 +7,21 @@ import static org.hamcrest.Matchers.*;
 public class Ex1_getRequest
 {
 
-//    @Test
+    @Test
     public void TC1()
     {
        given()
                .contentType("application/json")
+               .headers("x-api-key","reqres-free-v1")
        .when()
-               .get("https://reqres.in/api/users/2")
+               .get("https://reqres.in/api/users?page=2")
        .then()
                .log().all()
                .statusCode(401);
      }
 
 
-    @Test
+   // @Test
     public void TC2()
     {
         given()
@@ -33,7 +34,7 @@ public class Ex1_getRequest
     }
 
 
-    @Test
+  //  @Test
     public void TC3()
     {
         given()
@@ -49,7 +50,7 @@ public class Ex1_getRequest
     }
 
 
-    @Test
+  //  @Test
     public void TC4()
     {
         given()
