@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ExtentReporterSuite" verbose="1">
+    <listeners>
+        <listener class-name="P8_ExtentReporter.ExtentReportListener"/>
+    </listeners>
+
+    <test name="test">
+        <classes>
+            <class name="P8_ExtentReporter.Ex1_getStudent"/>
+        </classes>
+    </test>
+
+</suite>
